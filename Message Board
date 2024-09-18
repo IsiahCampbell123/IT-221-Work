@@ -31,3 +31,25 @@ def main():
             
 if __name__ == "__main__":
     main()  
+--- Message Board ---
+1. View Messages
+2. Post a New Message
+3. Exit
+Choose an option (1/2/3):2
+Enter message title:Hi my name is Isiah, nice to meet you
+Enter Message content:Intro
+
+--- Message Board ---
+1. View Messages
+2. Post a New Message
+3. Exit
+Choose an option (1/2/3):1
+Hi My name is Isiah Nice to meet you: Introduction
+Hi my name is Isiah, nice to meet you: Intro
+
+--- Message Board ---
+1. View Messages
+2. Post a New Message
+3. Exit
+Choose an option (1/2/3):3
+Goodbye!
