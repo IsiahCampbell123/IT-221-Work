@@ -1,0 +1,33 @@
+def display_messages():
+    try:
+        with open('messages.txt', 'r') as file:
+            messages = file.readlines()
+            for message in messages:
+                print(message.strip())
+    except FileNotFoundError:
+        print("No messages found.")
+def post_message():
+    title = input("Enter message title:")
+    content = input("Enter Message content:")
+    with open('messages.txt', 'a') as file:
+        file.write(f"{title}: {content}\n")
+def main():
+    while True:
+        print("\n--- Message Board ---")
+        print("1. View Messages")
+        print("2. Post a New Message")
+        print("3. Exit")
+        choice = input("Choose an option (1/2/3):")
+
+        if choice == '1':
+            display_messages()
+        elif choice == '2':
+            post_message()
+        elif choice == '3':
+            print("Goodbye!")
+            break
+        else:
+            print("Invalid option, please try again.")
+            
+if __name__ == "__main__":
+    main()  
